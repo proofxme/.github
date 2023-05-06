@@ -41,3 +41,9 @@ Stay connected with us through our social media channels:
 - GitHub: [Github Page](https://github.com/proofxme)
 
 If you have any questions, comments, or concerns, please feel free to contact us at [contact@pox.me](mailto:contact@pox.me). We value your feedback and look forward to hearing from you!
+
+## Supporters
+
+| AWS | BNB Chain (BNB) | Infiom |
+| --- | --- | --- |
+| <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/93/Amazon_Web_Services_Logo.svg/1280px-Amazon_Web_Services_Logo.svg.png" width="100"> | <img src="https://cryptologos.cc/logos/binance-coin-bnb-logo.png" width="100"> | <img src="https://pbs.twimg.com/profile_images/1159541095467896832/ewJvoHAa_400x400.png" width="100"> |
