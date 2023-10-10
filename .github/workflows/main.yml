@@ -1,4 +1,4 @@
-name: Telegram deploy Notifier
+name: Telegram Deploy Notifier
 
 on:
   push:
@@ -7,15 +7,16 @@ on:
     branches: [ main ]
 
 jobs:
-
   notifyTelegram:
     runs-on: ubuntu-latest
     steps:
     - name: send custom message
-      uses: appleboy/telegram-action@master
+      uses: appleboy/telegram-action@v0.1.5
       with:
         to: "@proofxme"
         token: ${{ secrets.TELEGRAM_BOT_POXME }}
         message: |
-          The ${{ github.event_name }} event triggered final step.
-          echo This event is a pull request that had an assignee removed.
+          Event: ${{ github.event_name }}
+          Repository: ${{ github.repository }}
+          Actor: ${{ github.actor }}
+          Commit Message: ${{ github.event.head_commit.message }}
