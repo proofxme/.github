@@ -17,4 +17,4 @@ jobs:
           TELEGRAM_CHAT: "@proofxme"
         with:
           parse_mode: "html"
-          message: "<strong>Event:</strong> ${{ github.event_name }}<br><strong>Repository:</strong> ${{ github.repository }}<br>"
+          message: <strong>Event:</strong> ${{ github.event_name }}<br><strong>Repository:</strong> ${{ github.repository }}<br>
