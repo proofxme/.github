@@ -12,7 +12,7 @@ jobs:
     steps:
     - name: Notify Telegram
       run: |
-        curl -X POST "https://api.telegram.org/bot${{ secrets.TELEGRAM_TOKEN }}/sendMessage" \
+        curl -X POST "https://api.telegram.org/bot${{ secrets.TELEGRAM_BOT_POXME }}/sendMessage" \
         -H "Content-Type: application/json" \
         --data-raw '{
           "chat_id": "@proofxme",
