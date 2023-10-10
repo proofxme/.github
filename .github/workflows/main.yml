@@ -16,5 +16,5 @@ jobs:
           TELEGRAM_TOKEN: ${{ secrets.TELEGRAM_BOT_POXME }}
           TELEGRAM_CHAT: "@proofxme"
         with:
-          text: "hello world"
+          message: "hello world"
           parse_mode: "html"
