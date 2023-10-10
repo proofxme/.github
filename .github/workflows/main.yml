@@ -10,13 +10,11 @@ jobs:
   notifyTelegram:
     runs-on: ubuntu-latest
     steps:
-    - name: send custom message
-      uses: appleboy/telegram-action@master
-      with:
-        to: "@proofxme"
-        token: ${{ secrets.TELEGRAM_BOT_POXME }}
-        message: |
-          Event: ${{ github.event_name }}
-          Repository: ${{ github.repository }}
-          Actor: ${{ github.actor }}
-          Commit Message: ${{ github.event.head_commit.message }}
+      - name: Send message to Telegram
+        uses: kekedaine/telegram-action@v2
+        env:
+          TELEGRAM_TOKEN: ${{ secrets.TELEGRAM_BOT_POXME }}
+          TELEGRAM_CHAT: "@proofxme"
+        with:
+          text: "hello world"
+          parse_mode: "html"
