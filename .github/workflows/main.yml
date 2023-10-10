@@ -16,5 +16,5 @@ jobs:
           TELEGRAM_TOKEN: ${{ secrets.TELEGRAM_BOT_POXME }}
           TELEGRAM_CHAT: "@proofxme"
         with:
-          message: "hello world"
           parse_mode: "html"
+          message: "<strong>Event:</strong> ${{ github.event_name }}<br><strong>Repository:</strong> ${{ github.repository }}<br><strong>Actor:</strong> ${{ github.actor }}<br><strong>Commit Message:</strong> ${{ github.event.head_commit.message }}<br>"
